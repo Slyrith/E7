@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-image: url('https://media.discordapp.net/attachments/1034547508665389058/1065272529993859083/wp11574018.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+#E7T {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+.hidden {
+    display: none;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+    animation: fadeout 2s;
+}
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.hover-parent:hover .hidden {
+    display: inline;
+    opacity: 1;
+}
+.show {
+    opacity: 1;
+}
+.icon-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.icon-container a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.icon-container img {
+    width: 48px;
+    height: 48px;
+}
+
+.icon-container p {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: right;
+    padding-right: 8px;
+}
+.icon {
+    border-radius: 20%; /* This will make the icon rounded */
+    width: 48px; /* Change the width of the icon */
+    height: 48px; /* Change the height of the icon */
+}
+.my-link {
+    text-decoration: none;
+    color: inherit;
+}
