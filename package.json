@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -16,9 +18,12 @@
   "bugs": {
     "url": "https://github.com/Slyrith/E7/issues"
   },
-  "homepage": "https://github.com/Slyrith/E7#readme",
+  "homepage": "https://slyrith.github.io/e7",
   "dependencies": {
     "express": "^4.18.2",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
