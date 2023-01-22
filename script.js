@@ -1,6 +1,6 @@
 var i = 0;
-var txt = 'Login to access E7'; /* The text */
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+var txt = 'Login to access E7'; 
+var speed = 50; 
 
 document.addEventListener("DOMContentLoaded", function(){
   function typeWriter() {
@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function(){
   }
   typeWriter();
   
-  // Add event listener to the toptext element
   var timeoutId;
   document.getElementById("E7T").addEventListener("mouseover", function() {
     document.querySelector(".hidden").style.display = "inline";
