@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "repository": {
@@ -19,11 +18,11 @@
     "url": "https://github.com/Slyrith/E7/issues"
   },
   "homepage": "https://slyrith.github.io/e7",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
   "dependencies": {
     "express": "^4.18.2",
     "path": "^0.12.7"
-  },
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
   }
 }
