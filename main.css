@@ -6,6 +6,8 @@ html, body {
     background-attachment: fixed;
     background-size: cover;
     background-blend-mode: soft-light;
+    background-position: center;
+    transition: background-image 1s linear;
 }
 #E7T {
     display: flex;
@@ -91,3 +93,8 @@ html, body {
     text-decoration: none;
     color: inherit;
 }
+#bg-switch-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+  }

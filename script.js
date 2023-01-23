@@ -2,6 +2,14 @@ var i = 0;
 var txt = 'Login to access E7'; 
 var speed = 50; 
 
+let backgrounds = ["bg1.png", "bg2.png", "bg3.png"];
+    let currentIndex = 0;
+  
+    function switchBackground() {
+      document.body.style.backgroundImage = `url(${backgrounds[currentIndex]})`;
+      currentIndex = (currentIndex + 1) % backgrounds.length;
+    };
+
 document.addEventListener("DOMContentLoaded", function(){
   function typeWriter() {
     if (i < txt.length) {
