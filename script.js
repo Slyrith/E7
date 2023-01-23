@@ -34,3 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }, 2000);
   });
 });
+
+if (location.protocol !== 'https:') {
+      location.replace(`https:${location.href.substring(location.protocol.length)}`);
+  }
